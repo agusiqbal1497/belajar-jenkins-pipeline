@@ -6,9 +6,21 @@ pipeline {
     //     }
     // }
     stages {
-        stage("Hello") {
+        stage("Build") {
             steps {
-                echo("Hello Pipeline by PZ")
+                echo("Build Pipeline by PZ")
+            }
+        }
+
+        stage("Test") {
+            steps {
+                echo("Test Pipeline by PZ")
+            }
+        }
+
+        stage("Deplpoy") {
+            steps {
+                echo("Deplpoy Pipeline by PZ")
             }
         }
     }
