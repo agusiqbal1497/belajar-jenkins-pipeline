@@ -8,7 +8,9 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                echo("Build Pipeline by PZ")
+                echo("Build Pipeline by PZ 1")
+                echo("Build Pipeline by PZ 2")
+                echo("Build Pipeline by PZ 3")
             }
         }
 
