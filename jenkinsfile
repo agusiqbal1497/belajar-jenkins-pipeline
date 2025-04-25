@@ -5,7 +5,7 @@ pipeline {
     //         label "Windows java11"
     //     }
     // }
-    // stages {
+    stages {
         stage("Hello") {
             steps {
                 echo("Hello Pipeline by PZ")
