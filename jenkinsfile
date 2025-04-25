@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            label "Windows java11"
+        }
+    }
     stages {
         stage("Hello") {
             steps {
