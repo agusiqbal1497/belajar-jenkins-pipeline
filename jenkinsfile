@@ -1,10 +1,11 @@
 pipeline {
-    agent {
-        node {
-            label "Windows java11"
-        }
-    }
-    stages {
+    agent any
+    // agent {
+    //     node {
+    //         label "Windows java11"
+    //     }
+    // }
+    // stages {
         stage("Hello") {
             steps {
                 echo("Hello Pipeline by PZ")
