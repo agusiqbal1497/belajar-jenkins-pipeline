@@ -13,7 +13,7 @@ pipeline {
                         "firstName" : "EGES",
                         "lastName" : "IQBAL"
                     ]
-                    writeJSON(file: "data.json, json: data")
+                    writeJSON(file: "data.json", json: data)
                     // for (int i = 0; i < 5; i++) {
                     //     echo("Script ${i}")
                     // }
