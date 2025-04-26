@@ -1,5 +1,9 @@
 pipeline {
     agent any
+
+    environment {
+        AUTHOR = "AGUS IQBAL"
+    }
     // agent {
     //     node {
     //         label "Windows java11"
@@ -8,7 +12,7 @@ pipeline {
     stages {
         stage("Prepare") {
             steps {
-                echo("Start Job : ${env.JOB_NAME}")
+                echo("Start Job : ${env.AUTHOR}")
                 echo("Start Build : ${env.BUILD_NUMBER}")
                 echo("Branch Name : ${env.BRANCH_NAME}")
             }
