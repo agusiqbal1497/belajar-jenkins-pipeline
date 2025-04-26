@@ -9,9 +9,14 @@ pipeline {
         stage("Build") {
             steps {
                 script {
-                    for (int i = 0; i < 5; i++) {
-                        echo("Script ${i}")
-                    }
+                    def data = [
+                        "firstName" : "EGES",
+                        "lastName" : "IQBAL"
+                    ]
+                    writeJSON(file: "data.json, json: data")
+                    // for (int i = 0; i < 5; i++) {
+                    //     echo("Script ${i}")
+                    // }
                 }
 
                 echo("Build Pipeline by PZ 1")
