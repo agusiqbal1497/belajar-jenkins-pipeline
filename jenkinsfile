@@ -8,22 +8,30 @@ pipeline {
     stages {
         stage("Build") {
             steps {
-                // echo("Build Pipeline by PZ 1")
-                // sleep(5)
-                // echo("Build Pipeline by PZ 2")
-                // echo("Build Pipeline by PZ 3")
-                echo("Start Build")
-                sh("./mvnw clean compile test-compile")
-                echo("Finish Build")
+                script {
+                    for (int i = 0; 0 < 10; i++) {
+                        scho("Script ${i}")
+                    }
+                }
+
+                echo("Build Pipeline by PZ 1")
+                sleep(5)
+                echo("Build Pipeline by PZ 2")
+                echo("Build Pipeline by PZ 3")
+
+                // echo("Start Build")
+                // sh("./mvnw clean compile test-compile")
+                // echo("Finish Build")
             }
         }
 
         stage("Test") {
             steps {
-                // echo("Test Pipeline by PZ")
-                echo("Start Test")
-                sh("./mvnw test")
-                echo("Finish Test")
+                echo("Test Pipeline by PZ")
+
+                // echo("Start Test")
+                // sh("./mvnw test")
+                // echo("Finish Test")
             }
         }
 
